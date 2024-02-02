@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import baseUrl from "@/baseUrl"; 
 
 import toast from "react-hot-toast";
 
@@ -17,7 +18,7 @@ const Signup = () => {
     console.log(name, email, password);
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/signup",
+        `${baseUrl}/api/signup`,
         {
           name,
           email,
