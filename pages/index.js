@@ -13,7 +13,7 @@ const index = ({ product }) => {
   // pagination
 
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 8;
+  const pageSize = 4;
   const totalProducts = products.length;
   const totalPages = Math.ceil(totalProducts / pageSize);
 
@@ -23,7 +23,7 @@ const index = ({ product }) => {
 
   return (
     <>
-      <div className="row m-auto mt-2">
+      <div className="row m-auto mt-2" style={{ height: "100vh" }}>
         <div className="col s12  flex justify-center flex-wrap items-center p-[70px]">
           {currentProducts.map((item) => {
             return (
