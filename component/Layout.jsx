@@ -5,14 +5,14 @@ import { Toaster } from "react-hot-toast";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
       <div>
         <Toaster position="top-center" />
         {children}
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
