@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      <div style={{ height: "100vh" }}>
+      <div>
         <Toaster position="top-center" />
         {children}
       </div>
