@@ -7,10 +7,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div>
-        <Toaster position="top-center" />
-        {children}
-      </div>
+
+      <Toaster position="top-center" />
+      {children}
+
       <Footer />
     </>
   );
