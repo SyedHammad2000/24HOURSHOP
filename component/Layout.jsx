@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Navbar />
 
       <Toaster position="top-center" />
