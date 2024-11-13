@@ -12,6 +12,7 @@ const Footer = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        padding: "20px",
       }}
     >
       <h1>Copyright © 2024. All rights reserved.</h1>
